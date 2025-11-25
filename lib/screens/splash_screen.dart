@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:fit_scale/screens/home_screen.dart';
 import 'package:fit_scale/utility/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../utility/app_color.dart';
 import 'onboarding_screen.dart';
+import 'package:fit_scale/screens/main_navigator.dart'; // Import MainNavigator
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void _navigateToHomeScreen(SharedPreferences prefs) {
     final String? name = prefs.getString('Name');
     final String displayName = (name == null || name.trim().isEmpty) ? 'User' : name;
-    _navigateTo(HomeScreen(userName: displayName));
+    _navigateTo(MainNavigator(userName: displayName));
   }
 
   @override
