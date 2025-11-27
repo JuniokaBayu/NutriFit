@@ -16,12 +16,12 @@ class InfoScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Aplikasi FitScale',
+                'Aplikasi NutriFit',
                 style: AppTextStyle.appName(context, fontSize: 30),
               ),
               const SizedBox(height: 20),
               Text(
-                'FitScale adalah Kalkulator BMI (Body Mass Index) yang sederhana dan mudah digunakan. Aplikasi ini dikembangkan untuk membantu Anda melacak status kesehatan berdasarkan Tinggi dan Berat Badan.',
+                'NutriFit adalah kalkulator BMI (Body Mass Index) yang praktis dan mudah dipakai. Aplikasi ini saya buat untuk membantu Anda mengecek kondisi kesehatan berdasarkan tinggi serta berat badan, sehingga Anda bisa lebih memahami tubuh Anda dan memulai kebiasaan hidup yang lebih sehat.',
                 textAlign: TextAlign.center,
                 style: AppTextStyle.paragraph(context, fontSize: 16),
               ),
