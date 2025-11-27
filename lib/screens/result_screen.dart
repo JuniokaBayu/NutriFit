@@ -74,7 +74,7 @@ class ResultScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.background(context, light: AppColor.creamLight, dark: AppColor.darkBlack),
-        title: Text("Your result", style: AppTextStyle.appBar(context)),
+        title: Text("Hasil Anda", style: AppTextStyle.appBar(context)),
       ),
       body: Container(
         height: double.infinity,
@@ -180,14 +180,14 @@ class ResultScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Guess What.?',
+                    'Tebak apa.?',
                 style: AppTextStyle.paragraph(context, fontSize: 25, fontWeight: FontWeight.w400, colorDark: AppColor.white, colorLight: AppColor.black87)
                   ),
                   RichText(
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: 'Your BMI results are ',
+                          text: 'Hasil BMI Anda adalah ',
                       style: AppTextStyle.paragraph(context, fontSize: 17, fontWeight: FontWeight.w400, colorDark: AppColor.white, colorLight: AppColor.black87)
                         ),
                         getResultText(),
@@ -221,9 +221,9 @@ class ResultScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             ...[
-                              ['Age', age],
-                              ['Height (in)', height],
-                              ['Weight (kg)', weight],
+                              ['Umur', age],
+                              ['Tinggi (cm)', height],
+                              ['Berat (kg)', weight],
                             ].asMap().entries.expand((entry) {
                               int index = entry.key;
                               var item = entry.value;
@@ -288,8 +288,8 @@ class ResultScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ['Suggestion', ()=>Navigator.push(context,MaterialPageRoute(builder: (context) => SuggestionScreen(bmi: bmi, userName: userName,)))],
-                  ['Retry', () => Navigator.pop(context)],
+                  ['Saran', ()=>Navigator.push(context,MaterialPageRoute(builder: (context) => SuggestionScreen(bmi: bmi, userName: userName,)))],
+                  ['Coba Kembali', () => Navigator.pop(context)],
                 ].map((btn) {
                   return Expanded(
                     child: Padding(

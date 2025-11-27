@@ -1,5 +1,7 @@
 import 'package:fit_scale/screens/home_screen.dart';
 // Import HistoryScreen
+import 'package:fit_scale/screens/history_screen.dart';
+
 import 'package:fit_scale/screens/info_screen.dart';     // Import InfoScreen
 import 'package:flutter/material.dart';
 import '../utility/app_color.dart';
@@ -25,7 +27,7 @@ class _MainNavigatorState extends State<MainNavigator> {
       // Screen 0: Home Screen (Kalkulator BMI)
       HomeScreen(userName: widget.userName),
       // Screen 1: History Screen
-      // const HistoryScreen(),
+      const HistoryScreen(),
       // Screen 2: Info Screen
       const InfoScreen(),
     ];

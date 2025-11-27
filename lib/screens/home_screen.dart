@@ -6,6 +6,7 @@ import 'package:fit_scale/utility/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ruler_picker/flutter_ruler_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart'; 
 import '../utility/app_color.dart';
 
 class HomeScreen extends StatefulWidget{
@@ -39,10 +40,39 @@ class _HomeScreenState extends State<HomeScreen> {
 
   String getGreeting() {
     final hour = DateTime.now().hour;
-    if (hour < 12) return 'Good Morning';
-    if (hour < 17) return 'Good Afternoon';
-    if (hour < 20) return 'Good Evening';
-    return 'Good Night';
+    if (hour < 5) return 'Selamat Dini Hari';     
+    if (hour < 11) return 'Selamat Pagi';         
+    if (hour < 15) return 'Selamat Siang';        
+    if (hour < 18) return 'Selamat Sore';         
+    
+    return 'Selamat Malam';                       
+  }
+
+  Future<void> _saveBmiRecord(double bmiValue, String category) async {
+    final prefs = await SharedPreferences.getInstance();
+    // Format data: "TGL|BMI|KATEGORI"
+    final String newRecord = "${DateTime.now().toIso8601String().substring(0, 10)}|${bmiValue.toStringAsFixed(1)}|$category";
+    
+    // Ambil daftar riwayat yang sudah ada
+    final List<String> history = prefs.getStringList('bmi_history') ?? [];
+    
+    // Tambahkan riwayat baru ke daftar
+    history.add(newRecord);
+    
+    // Simpan kembali daftar riwayat
+    await prefs.setStringList('bmi_history', history);
+  }
+
+  // Tambahkan fungsi untuk mendapatkan kategori BMI
+  String _getBmiCategory(double bmi) {
+      if (bmi < 16) return 'Severe Thinness';
+      else if (bmi < 17) return 'Moderate Thinness';
+      else if (bmi < 18.5) return 'Mild Thinness';
+      else if (bmi < 25) return 'Normal';
+      else if (bmi < 30) return 'Overweight';
+      else if (bmi < 35) return 'Obese Class I';
+      else if (bmi < 40) return 'Obese Class II';
+      else return 'Obese Class III';
   }
 
   void _onMenuSelected(String value) {
@@ -87,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
              _buildHeader(),
              _buildGenderAgeSection(),
              const SizedBox(height: 10),
-             _buildMeasurementCard('Height', 'inch', currentHeight, _heightController, _onHeightChanged, 'assets/images/heighting.png'),
+             _buildMeasurementCard('Height', 'cm', currentHeight, _heightController, _onHeightChanged, 'assets/images/heighting.png'),
              const SizedBox(height: 10),
              _buildMeasurementCard('Weight', 'kg', currentWeight, _weightController, _onWeightChanged, 'assets/images/weighting.png', isDecimal: true),
              const SizedBox(height: 10),
@@ -297,11 +327,17 @@ class _HomeScreenState extends State<HomeScreen> {
               backgroundColor: AppColor.buttonColor(context, dark: AppColor.extraLightBlack),
               foregroundColor: Colors.black87,
             ),
-            onPressed: () {
+           
+
+            onPressed: () async { // UBAH: Jadikan async
               final gender = maleSelected ? 'Male' : (femaleSelected ? 'Female' : '');
-              // HITUNG BMI BARU (Tinggi dari cm diubah ke meter: currentHeight / 100)
-              final double heightInMeters = currentHeight / 100; // 1 cm = 0.01 m
-              final bmi = currentWeight / (heightInMeters * heightInMeters);
+              final double heightInMeters = currentHeight / 100;
+              final bmiValue = currentWeight / (heightInMeters * heightInMeters);
+                          
+             // SIMPAN RIWAYAT SEBELUM NAVIGASI
+             final category = _getBmiCategory(bmiValue);
+             await _saveBmiRecord(bmiValue, category);
+             // END SIMPAN RIWAYAT
 
               Navigator.push(
                 context,
@@ -310,14 +346,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     userName: firstName,
                     gender: gender,
                     age: currentAge.toStringAsFixed(0),
-                    height: currentHeight.toStringAsFixed(0), // Kirim cm ke layar hasil
+                    height: currentHeight.toStringAsFixed(0),
                     weight: currentWeight.toStringAsFixed(1),
-                    bmi: bmi.toStringAsFixed(1),
-                 ),
+                    bmi: bmiValue.toStringAsFixed(1), // Kirim nilai bmiValue
+                  ),
                 ),
               );
             },
-            child: Text('Calculate', style: AppTextStyle.paragraph(context, colorDark: AppColor.white)),
+
+            child: Text('Menghitung', style: AppTextStyle.paragraph(context, colorDark: AppColor.white)),
           ),
         ),
       ),
