@@ -67,14 +67,14 @@ class _HomeScreenState extends State<HomeScreen> {
        title: Row(
          mainAxisAlignment: MainAxisAlignment.spaceBetween,
          children: [
-           Text("FitScale", style: AppTextStyle.appBar(context)),
+           Text("NutriFit", style: AppTextStyle.appBar(context)),
            PopupMenuButton<String>(
              icon: const Icon(Icons.more_vert),
              onSelected: _onMenuSelected,
              itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-               const PopupMenuItem<String>(value: 'change_name', child: Text('Change User Name')),
-               const PopupMenuItem<String>(value: 'theme', child: Text('Change Theme')),
-               const PopupMenuItem<String>(value: 'developer', child: Text('Developer')),
+               const PopupMenuItem<String>(value: 'change_name', child: Text('Ubah Nama')),
+               const PopupMenuItem<String>(value: 'theme', child: Text('Ubah Tema')),
+               const PopupMenuItem<String>(value: 'developer', child: Text('Pengembang')),
              ],
            ),
          ],
@@ -179,8 +179,8 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset(isSelected ? selectedImg : unselectedImg, height: 80),
-            Text(label, style: AppTextStyle.paragraph(context, fontSize: 20, fontWeight: FontWeight.w500, colorLight: AppColor.black87, colorDark: AppColor.darkWhite)),
+            Image.asset(isSelected ? selectedImg : unselectedImg, height: 60),
+            Text(label, style: AppTextStyle.paragraph(context, fontSize: 16, fontWeight: FontWeight.w500, colorLight: AppColor.black87, colorDark: AppColor.darkWhite)),
           ],
         ),
       ),
@@ -196,7 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(flex: 2, child: Center(child: Text("Age", style: AppTextStyle.paragraph(context, fontSize: 30, fontWeight: FontWeight.w600, colorLight: AppColor.black87, colorDark: AppColor.darkWhite)))),
+            Expanded(flex: 2, child: Center(child: Text("Umur", style: AppTextStyle.paragraph(context, fontSize: 30, fontWeight: FontWeight.w600, colorLight: AppColor.black87, colorDark: AppColor.darkWhite)))),
             Expanded(flex: 3, child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Column(
@@ -323,6 +323,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
+
+  
 }
 
 

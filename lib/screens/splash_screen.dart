@@ -58,9 +58,16 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/Splash.webp'),
+                  Image.asset('assets/images/Splash4.webp'),
+                  // Image.asset(
+                  //   'assets/images/Splash2.webp',
+                  //   width: 180, // sesuaikan
+                  //   height: 180,
+                  //   fit: BoxFit.contain,
+                  // ),
+
                   const SizedBox(height: 10),
-                  Text('FitScale', style: AppTextStyle.appName(context)),
+                  Text('NutriFit', style: AppTextStyle.appName(context)),
                 ],
               ),
             ),

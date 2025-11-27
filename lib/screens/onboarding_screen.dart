@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:fit_scale/screens/home_screen.dart';
 import '../utility/app_color.dart';
 import 'intro_screen.dart';
 import 'name_screen.dart';
+import 'package:fit_scale/screens/main_navigator.dart'; // Import MainNavigator
+
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -25,7 +26,8 @@ class _OnboardingScreen extends State<OnboardingScreen> {
 
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (_) => HomeScreen(userName: name)),
+      MaterialPageRoute(builder: (_) => MainNavigator(userName: name)),
+      
     );
   }
 

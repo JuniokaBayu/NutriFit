@@ -27,7 +27,7 @@ class AppColor {
 
   // Cream
   static const Color cream = Color(0xFFFAF7BA);
-  static const Color creamLight = Color(0xFFF6EBC0);
+  static const Color creamLight = Color(0xFFBBDEFB);
   static const Color creamDark = Color(0xFFF3ED9A);
   static const Color border = Color(0xFFA3916F);
   static const Color buttonBg = Color(0xFFFFF8E1);

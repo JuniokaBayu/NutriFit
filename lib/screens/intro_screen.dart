@@ -15,19 +15,19 @@ class IntroScreen extends StatelessWidget {
         children: [
           Image.asset('assets/images/logo.png', height: 200),
           const SizedBox(height: 20),
-          Text('FitScale', style: AppTextStyle.appName(context)),
+          Text('NutriFit', style: AppTextStyle.appName(context)),
           const SizedBox(height: 30),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
-              'Your health matters. FitScale makes it easy to understand your body better with just a few taps. Check your BMI, track your fitness, and take charge of your wellness journey!',
+              'Kesehatan Anda itu berharga. NutriFit hadir untuk membantu Anda mengenal kondisi tubuh dengan cara yang sederhana. Cukup beberapa ketukan, Anda bisa mengecek BMI, memantau kebugaran, dan mulai mengarahkan diri menuju gaya hidup yang lebih sehat.',
               textAlign: TextAlign.center,
               style: AppTextStyle.paragraph(context),
             ),
           ),
           const SizedBox(height: 30),
           Text(
-            "Let's begin 💪",
+            "Mari kita mulai 💪",
             style: AppTextStyle.paragraph(
               context,
               colorLight: AppColor.lightBlack,

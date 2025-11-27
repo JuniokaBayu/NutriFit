@@ -25,12 +25,6 @@ class InfoScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: AppTextStyle.paragraph(context, fontSize: 16),
               ),
-              const SizedBox(height: 30),
-              Text(
-                'Versi: 1.0.0 (Flutter)',
-                style: AppTextStyle.paragraph(context, colorLight: AppColor.black54),
-              ),
-              // Tambahkan info lain di sini jika perlu
             ],
           ),
         ),
