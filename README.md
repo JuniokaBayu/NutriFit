@@ -7,7 +7,8 @@ NutriFit adalah aplikasi Flutter yang dirancang dengan indah yang menghitung Ind
 ## 🧑‍💻 Info Pengembang
 
 Dibuat Oleh : Junioka Bayu Gionanda
-*Projek ini dibuat untuk memenuhi tugas Ujian Tengah Semester (UTS) pada mata kuliah Pemrograman Mobile 2 / Pemrogramman Bergerak
+
+* Projek ini dibuat untuk memenuhi tugas Ujian Tengah Semester (UTS) pada mata kuliah Pemrograman Mobile 2 / Pemrogramman Bergerak
 
 ---
 
