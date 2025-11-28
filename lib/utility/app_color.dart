@@ -25,22 +25,22 @@ class AppColor {
   static const Color white = Color(0xCBFFFFFF);
   static const Color lightWhite = Color(0x99FFFFFF);
 
-  // Cream
-  static const Color cream = Color(0xFFFAF7BA);
-  static const Color creamLight = Color(0xFFBBDEFB);
-  static const Color creamDark = Color(0xFFF3ED9A);
-  static const Color border = Color(0xFFA3916F);
-  static const Color buttonBg = Color(0xFFFFF8E1);
-  static const Color buttonFg = Color(0xFFFFFDD0);
-  static const Color dotColor1 = Color(0xFFE3C456);
-  static const Color dotColor2 = Color(0xFFF6A121);
-  static const Color appBarTitle = Color(0xFF4A3903);
-  static const Color userName = Color(0xFF4A3903);
+  // Blue - pengganti Cream
+  static const Color cream = Color(0xFF4A90E2); // Biru utama (medium blue)
+  static const Color creamLight = Color(0xFF7AB8F5); // Biru muda
+  static const Color creamDark = Color(0xFF2E5C8A); // Biru gelap
+  static const Color border = Color(0xFF1E3A5F); // Biru navy untuk border
+  static const Color buttonBg = Color(0xFFE3F2FD); // Biru sangat muda untuk background button
+  static const Color buttonFg = Color(0xFFBBDEFB); // Biru pastel untuk foreground button
+  static const Color dotColor1 = Color(0xFF5C9FD6); // Biru medium untuk dot
+  static const Color dotColor2 = Color(0xFF2196F3); // Biru cerah untuk dot kedua
+  static const Color appBarTitle = Color.fromARGB(255, 5, 41, 94); // Biru tua untuk app bar title
+  static const Color userName = Color(0xFF1565C0); // Biru gelap untuk username
 
   // red
   static const Color red = Color(0xFFF17171);
 
-  // color: Color(0xFFF6EBC0),
+  // color: Color(0xFF7AB8F5) - biru muda alternatif
 
 
 

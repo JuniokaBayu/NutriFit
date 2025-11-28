@@ -8,7 +8,7 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColor.background(context, light: AppColor.creamDark),
+      color: AppColor.background(context, light: AppColor.creamLight),
       width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

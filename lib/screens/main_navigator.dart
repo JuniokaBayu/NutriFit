@@ -50,10 +50,12 @@ class _MainNavigatorState extends State<MainNavigator> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         backgroundColor: AppColor.background(context, light: AppColor.creamLight, dark: AppColor.darkBlack),
-        selectedItemColor: AppColor.red, // Tetap merah untuk yang dipilih
+        selectedItemColor: Theme.of(context).brightness == Brightness.dark
+            ? AppColor.creamLight // Biru muda untuk Dark Mode
+            : AppColor.appBarTitle, // Biru tua untuk Light Mode
         unselectedItemColor: Theme.of(context).brightness == Brightness.dark
-            ? AppColor.lightWhite // UBAH: Gunakan lightWhite (abu-abu terang) untuk Dark Mode
-            : AppColor.black38, // Tetap hitam/abu-abu untuk Light Mode
+            ? AppColor.lightWhite // Abu-abu terang untuk Dark Mode
+            : AppColor.black38, // Hitam/abu-abu untuk Light Mode
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

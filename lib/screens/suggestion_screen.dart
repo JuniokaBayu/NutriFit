@@ -178,7 +178,7 @@ class SuggestionScreen extends StatelessWidget {
   TextStyle _sectionTitle() => TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,
-    color: Colors.blueAccent,
+    color: const Color.fromARGB(255, 9, 51, 123),
   );
 
   TextStyle _contentText() => TextStyle(fontSize: 16);

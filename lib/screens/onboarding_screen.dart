@@ -61,7 +61,7 @@ class _OnboardingScreen extends State<OnboardingScreen> {
                       duration: const Duration(milliseconds: 500),
                       curve: Curves.easeIn,
                     ),
-                    child: const Text("Skip"),
+                    child: const Text("Lewati"),
                   )
                 else
                   const SizedBox(width: 48), // Placeholder for layout balance
@@ -86,7 +86,7 @@ class _OnboardingScreen extends State<OnboardingScreen> {
                     duration: const Duration(milliseconds: 500),
                     curve: Curves.easeIn,
                   ),
-                  child: Text(onLastPage ? "Done" : "Next"),
+                  child: Text(onLastPage ? "Selesai" : "Lanjut"),
                 ),
               ],
             ),

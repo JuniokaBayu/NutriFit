@@ -20,7 +20,7 @@ class NameScreen extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: AppColor.background(context, light: AppColor.creamDark),
+      backgroundColor: AppColor.background(context, light: AppColor.creamLight),
         resizeToAvoidBottomInset: true,
         body: SafeArea(
         child: Container(

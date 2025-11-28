@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/Splash4.webp'),
+                  Image.asset('assets/images/Splash7.webp'),
                   // Image.asset(
                   //   'assets/images/Splash2.webp',
                   //   width: 180, // sesuaikan
