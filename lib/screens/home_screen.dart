@@ -117,9 +117,9 @@ class _HomeScreenState extends State<HomeScreen> {
              _buildHeader(),
              _buildGenderAgeSection(),
              const SizedBox(height: 10),
-             _buildMeasurementCard('Height', 'cm', currentHeight, _heightController, _onHeightChanged, 'assets/images/heighting.png'),
+             _buildMeasurementCard('Tinggi', 'cm', currentHeight, _heightController, _onHeightChanged, 'assets/images/heighting.png'),
              const SizedBox(height: 10),
-             _buildMeasurementCard('Weight', 'kg', currentWeight, _weightController, _onWeightChanged, 'assets/images/weighting.png', isDecimal: true),
+             _buildMeasurementCard('Berat', 'kg', currentWeight, _weightController, _onWeightChanged, 'assets/images/weighting.png', isDecimal: true),
              const SizedBox(height: 10),
              _buildCalculateButton(),
              const SizedBox(height: 10),
@@ -269,10 +269,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                   Text('${value.toStringAsFixed(isDecimal ? 1 : 0)} ${title == 'Height' ? 'cm' : unit}', // UBAH: Tambahkan logika unit untuk Tinggi
+                   Text('${value.toStringAsFixed(isDecimal ? 1 : 0)} ${title == 'Tinggi' ? 'cm' : unit}', // UBAH: Tambahkan logika unit untuk Tinggi
                       style: AppTextStyle.paragraph(context, fontSize: 30, fontWeight: FontWeight.bold, colorLight: AppColor.black54, colorDark: AppColor.white)
                     ),
-                    _buildRulerPicker(controller, onChange, isDecimal: isDecimal, isHeight: title == 'Height'), // UBAH: Kirim flag isHeight
+                    _buildRulerPicker(controller, onChange, isDecimal: isDecimal, isHeight: title == 'Tinggi'), // UBAH: Kirim flag isHeight
                   ],
                 ),
               ),
@@ -359,11 +359,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
-  }
-
-
-  
+  }  
 }
-
-
 

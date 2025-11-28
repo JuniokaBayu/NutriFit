@@ -147,23 +147,23 @@ class SuggestionScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Your BMI: ${bmi} ($category) ${suggestion.emoji}",
+                "BMI Kamu: ${bmi} ($category) ${suggestion.emoji}",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
 
-              Text("💡 Motivation", style: _sectionTitle()),
+              Text("💡 Motivasi", style: _sectionTitle()),
               Text(suggestion.motivation, style: _contentText()),
 
               SizedBox(height: 20),
-              Text("🍽️ Food Suggestions", style: _sectionTitle()),
+              Text("🍽️ Saran Makanan", style: _sectionTitle()),
               ...suggestion.foodTips.map((tip) => ListTile(
                 leading: Icon(Icons.fastfood),
                 title: Text(tip),
               )),
 
               SizedBox(height: 20),
-              Text("🏋️ Exercise Suggestions", style: _sectionTitle()),
+              Text("🏋️ Saran Latihan", style: _sectionTitle()),
               ...suggestion.exerciseTips.map((tip) => ListTile(
                 leading: Icon(Icons.fitness_center),
                 title: Text(tip),
