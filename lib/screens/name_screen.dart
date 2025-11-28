@@ -35,13 +35,13 @@ class NameScreen extends StatelessWidget {
                   Image.asset('assets/images/HiGIF.gif', height: screenHeight*0.35),
                   // title
                   Text(
-                    'Hey there!',
+                    'Hello!',
                     style: AppTextStyle.appName(context, fontSize: 25)
                   ),
                   const SizedBox(height: 40),
                   // Paragraph
                   Text(
-                    'What should we call you?',
+                    'Kami harus memanggil kamu apa?',
                     style: AppTextStyle.paragraph(context, fontSize: 18,
                         // color: Colors.black54
                     ),
@@ -57,9 +57,9 @@ class NameScreen extends StatelessWidget {
                             controller: controller,
                             keyboardType: TextInputType.name,
                             decoration: InputDecoration(
-                              hintText: 'Krishna',
+                              hintText: 'nama',
                               hintStyle: AppTextStyle.paragraph(context, colorDark: AppColor.extraLightBlack),
-                              labelText: 'Enter Your Name',
+                              labelText: 'Masukkan Nama Anda',
                               labelStyle: AppTextStyle.paragraph(context, colorDark: AppColor.white),
                               enabledBorder: border,
                               focusedBorder: border,

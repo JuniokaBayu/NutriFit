@@ -34,98 +34,98 @@ class SuggestionScreen extends StatelessWidget {
   final Map<String, BmiSuggestion> suggestionMap = {
     'Severe Thinness': BmiSuggestion(
       emoji: '🧍‍♂️🍲',
-      motivation: "Your body needs more strength! Let’s nourish it 💪",
+      motivation: "Tubuhmu butuh lebih banyak kekuatan! Ayo kita beri nutrisi! 💪",
       foodTips: [
-        "Add calorie-rich foods: nuts, dairy, ghee 🥛🥜",
-        "Frequent small meals + protein shakes 🍗",
+        "Tambahkan makanan kaya kalori: kacang-kacangan, susu, ghee 🥛🥜",
+        "Makan kecil sering + protein shake 🍗",
       ],
       exerciseTips: [
-        "Do light yoga 🧘",
-        "Avoid overexertion; focus on gaining strength 💪",
+        "Lakukan yoga ringan 🧘",
+        "Hindari kelelahan berlebihan; fokuslah untuk mendapatkan kekuatan 💪",
       ],
     ),
     'Moderate Thinness': BmiSuggestion(
       emoji: '🍛🏋️',
-      motivation: "You're getting there! Fuel up and train smart 🔥",
+      motivation: "Kamu hampir sampai! Isi Stamina dan berlatihlah dengan cerdas. 🔥",
       foodTips: [
-        "High-protein meals with carbs 🍚🍖",
-        "Avoid skipping meals 🍽️",
+        "Makanan tinggi protein dengan karbohidrat 🍚🍖",
+        "Hindari melewatkan waktu makan 🍽️",
       ],
       exerciseTips: [
-        "Basic strength workouts 🏋️",
-        "Daily walk and stretching 🧘‍♂️",
+        "Latihan kekuatan dasar 🏋️",
+        "Jalan kaki dan peregangan setiap hari 🧘‍♂️",
       ],
     ),
     'Mild Thinness': BmiSuggestion(
       emoji: '🍞💪',
-      motivation: "Almost healthy – just a bit more push needed 🚀",
+      motivation: "Hampir sehat – hanya perlu sedikit dorongan lagi 🚀",
       foodTips: [
-        "Add healthy fats and milk 🥛🧀",
-        "Eat on time regularly ⏰",
+        "Tambahkan lemak sehat dan susu 🥛🧀",
+        "Makan tepat waktu secara teratur ⏰",
       ],
       exerciseTips: [
-        "Bodyweight exercises + light weights 🏋️‍♀️",
-        "Avoid high-cardio activities for now ⛔",
+        "Latihan beban tubuh + beban ringan 🏋️‍♀️",
+        "Hindari aktivitas kardio tinggi untuk saat ini ⛔",
       ],
     ),
     'Normal': BmiSuggestion(
       emoji: '🌟🎯',
-      motivation: "Perfect! Maintain this balance and stay consistent 🌈",
+      motivation: "Sempurna! Pertahankan keseimbangan ini dan tetap konsisten. 🌈",
       foodTips: [
-        "Balanced meals: fruits, grains, protein 🥗🍗",
-        "Stay hydrated 💧",
+        "Makanan seimbang: buah-buahan, biji-bijian, protein 🥗🍗",
+        "Tetap terhidrasi 💧",
       ],
       exerciseTips: [
-        "Mix of cardio + weights 🏃‍♂️🏋️‍♂️",
-        "Try meditation or yoga 🧘",
+        "Campuran kardio + beban 🏃‍♂️🏋️‍♂️",
+        "Cobalah meditasi atau yoga 🧘",
       ],
     ),
     'Overweight': BmiSuggestion(
       emoji: '🥦🚴',
-      motivation: "Let’s shed some weight and get fit together 💥",
+      motivation: "Mari kita kurangi berat badan dan menjadi bugar bersama 💥",
       foodTips: [
-        "Avoid sugar, fried food 🚫🍩",
-        "Eat fiber and protein 🥦🍗",
+        "Hindari gula, makanan yang digoreng 🚫🍩",
+        "Makan serat dan protein 🥦🍗",
       ],
       exerciseTips: [
-        "Cardio + strength training 🏃‍♂️💪",
-        "Walk daily, aim for 7k+ steps 👣",
+        "Latihan kardio + kekuatan 🏃‍♂️💪",
+        "Jalan kaki setiap hari, targetkan 7.000+ langkah 👣",
       ],
     ),
     'Obese Class I': BmiSuggestion(
       emoji: '⚠️🔥',
-      motivation: "Time to take charge. You can do this! 💯",
+      motivation: "Saatnya mengambil alih. Kamu bisa! 💯",
       foodTips: [
-        "Switch to clean, home-cooked food 🍲",
-        "Say no to soft drinks, sweets 🚫🥤",
+        "Beralihlah ke makanan rumahan yang bersih 🍲",
+        "Katakan tidak pada minuman ringan dan permen 🚫🥤",
       ],
       exerciseTips: [
-        "Brisk walking + low impact workouts 🚶",
-        "Start slowly, then add intensity gradually 🧗",
+        "Jalan cepat + latihan berdampak rendah 🚶",
+        "Mulailah secara perlahan, lalu tingkatkan intensitas secara bertahap 🧗",
       ],
     ),
     'Obese Class II': BmiSuggestion(
       emoji: '🚨❤️',
-      motivation: "Health alert! Let's rebuild your lifestyle, one step at a time 👣",
+      motivation: "Peringatan kesehatan! Mari bangun kembali gaya hidup Anda, selangkah demi selangkah. 👣",
       foodTips: [
-        "Avoid processed food completely 🚫🍔",
-        "Consult a nutritionist if possible 🩺",
+        "Hindari makanan olahan sepenuhnya 🚫🍔",
+        "Konsultasikan dengan ahli gizi jika memungkinkan 🩺",
       ],
       exerciseTips: [
-        "Do chair or pool exercises 💧",
-        "Work with a trainer or doctor 👨‍⚕️",
+        "Lakukan latihan kursi atau kolam renang 💧",
+        "Bekerja dengan pelatih atau dokter 👨‍⚕️",
       ],
     ),
     'Obese Class III': BmiSuggestion(
       emoji: '🏥🛑',
-      motivation: "It’s serious, but not impossible. Start today – your body deserves it 🧠❤️",
+      motivation: "Serius, tapi bukan berarti mustahil. Mulailah hari ini – tubuhmu pantas mendapatkannya. 🧠❤️",
       foodTips: [
-        "Strict diet plan, focus on vegetables and protein 🥬🍗",
-        "Smaller meals, more often 🍽️",
+        "Rencana diet ketat, fokus pada sayuran dan protein 🥬🍗",
+        "Makan lebih sedikit, lebih sering 🍽️",
       ],
       exerciseTips: [
-        "Very low-impact movements, under supervision 🧑‍⚕️",
-        "Monitor heart rate and progress regularly 📉",
+        "Gerakan berdampak sangat rendah, di bawah pengawasan 🧑‍⚕️",
+        "Pantau detak jantung dan kemajuan secara teratur 📉",
       ],
     ),
   };
