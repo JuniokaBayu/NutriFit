@@ -56,6 +56,7 @@ class SuggestionScreen extends StatelessWidget {
         "Jalan kaki dan peregangan setiap hari 🧘‍♂️",
       ],
     ),
+    // (SEMUA DATA TETAP, tidak diubah)
     'Mild Thinness': BmiSuggestion(
       emoji: '🍞💪',
       motivation: "Hampir sehat – hanya perlu sedikit dorongan lagi 🚀",
@@ -80,6 +81,7 @@ class SuggestionScreen extends StatelessWidget {
         "Cobalah meditasi atau yoga 🧘",
       ],
     ),
+    // (DAN SETERUSNYA tanpa perubahan)
     'Overweight': BmiSuggestion(
       emoji: '🥦🚴',
       motivation: "Mari kita kurangi berat badan dan menjadi bugar bersama 💥",
@@ -139,6 +141,7 @@ class SuggestionScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Hi $userName 👋'),
         centerTitle: true,
+        elevation: 0,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -146,27 +149,87 @@ class SuggestionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "BMI Kamu: ${bmi} ($category) ${suggestion.emoji}",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              // --- Card Header BMI ---
+              Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade50,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Row(
+                  children: [
+                    Text(
+                      suggestion.emoji,
+                      style: const TextStyle(fontSize: 35),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        "BMI Kamu: $bmi\nKategori: $category",
+                        style: const TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(height: 20),
 
+              const SizedBox(height: 25),
+
+              // === MOTIVASI ===
               Text("💡 Motivasi", style: _sectionTitle()),
-              Text(suggestion.motivation, style: _contentText()),
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.blue.shade100, width: 1.3),
+                ),
+                child: Text(suggestion.motivation, style: _contentText()),
+              ),
 
-              SizedBox(height: 20),
+              const SizedBox(height: 25),
+
+              // === SARAN MAKANAN ===
               Text("🍽️ Saran Makanan", style: _sectionTitle()),
-              ...suggestion.foodTips.map((tip) => ListTile(
-                leading: Icon(Icons.fastfood),
-                title: Text(tip),
+              const SizedBox(height: 10),
+              ...suggestion.foodTips.map((tip) => Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: Colors.orange.shade50,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(Icons.fastfood, size: 26),
+                    const SizedBox(width: 10),
+                    Expanded(child: Text(tip, style: _contentText())),
+                  ],
+                ),
               )),
 
-              SizedBox(height: 20),
+              const SizedBox(height: 25),
+
+              // === SARAN LATIHAN ===
               Text("🏋️ Saran Latihan", style: _sectionTitle()),
-              ...suggestion.exerciseTips.map((tip) => ListTile(
-                leading: Icon(Icons.fitness_center),
-                title: Text(tip),
+              const SizedBox(height: 10),
+              ...suggestion.exerciseTips.map((tip) => Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: Colors.green.shade50,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(Icons.fitness_center, size: 26),
+                    const SizedBox(width: 10),
+                    Expanded(child: Text(tip, style: _contentText())),
+                  ],
+                ),
               )),
             ],
           ),
@@ -175,11 +238,11 @@ class SuggestionScreen extends StatelessWidget {
     );
   }
 
-  TextStyle _sectionTitle() => TextStyle(
+  TextStyle _sectionTitle() => const TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,
-    color: const Color.fromARGB(255, 9, 51, 123),
+    color: Color.fromARGB(255, 9, 51, 123),
   );
 
-  TextStyle _contentText() => TextStyle(fontSize: 16);
+  TextStyle _contentText() => const TextStyle(fontSize: 16);
 }

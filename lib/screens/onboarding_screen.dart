@@ -49,48 +49,48 @@ class _OnboardingScreen extends State<OnboardingScreen> {
 
           // Bottom navigation and indicators
           Positioned(
-            bottom: 25,
-            left: 20,
-            right: 20,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                if (!onLastPage)
-                  GestureDetector(
-                    onTap: () => _controller.nextPage(
-                      duration: const Duration(milliseconds: 500),
-                      curve: Curves.easeIn,
-                    ),
-                    child: const Text("Lewati"),
-                  )
-                else
-                  const SizedBox(width: 48), // Placeholder for layout balance
+  bottom: 25,
+  left: 20,
+  right: 20,
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      if (!onLastPage)
+        GestureDetector(
+          onTap: () => _controller.nextPage(
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeIn,
+          ),
+          child: const Text("Lewati"),
+        )
+      else
+        const SizedBox(width: 48),
 
-                SmoothPageIndicator(
-                  controller: _controller,
-                  count: 2,
-                  effect: WormEffect(
-                    dotColor: AppColor.background(context, light: AppColor.dotColor1, dark: AppColor.lightWhite),
-                    activeDotColor: AppColor.background(context, light: AppColor.dotColor2, dark: AppColor.white),
-                    // dotColor: Color(0xFFE3C456),
-                    // activeDotColor: Color(0xFFF6A121),
-                    dotHeight: 13,
-                    dotWidth: 15,
-                  ),
-                ),
+      SmoothPageIndicator(
+        controller: _controller,
+        count: 2,
+        effect: WormEffect(
+          dotColor: AppColor.background(context,
+              light: AppColor.dotColor1, dark: AppColor.lightWhite),
+          activeDotColor: AppColor.background(context,
+              light: AppColor.dotColor2, dark: AppColor.white),
+          dotHeight: 13,
+          dotWidth: 15,
+        ),
+      ),
 
-                GestureDetector(
-                  onTap: onLastPage
-                      ? _saveNameAndNavigate
-                      : () => _controller.nextPage(
-                    duration: const Duration(milliseconds: 500),
-                    curve: Curves.easeIn,
-                  ),
-                  child: Text(onLastPage ? "Selesai" : "Lanjut"),
-                ),
-              ],
-            ),
-          )
+      GestureDetector(
+        onTap:
+            onLastPage ? _saveNameAndNavigate : () => _controller.nextPage(
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeIn,
+        ),
+        child: Text(onLastPage ? "Selesai" : "Lanjut"),
+      ),
+    ],
+  ),
+)
+
         ],
       ),
     );

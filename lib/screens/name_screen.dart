@@ -12,7 +12,6 @@ class NameScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
-    final screenWidth = MediaQuery.of(context).size.width;
 
     final OutlineInputBorder border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(50),
@@ -21,70 +20,94 @@ class NameScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: AppColor.background(context, light: AppColor.creamLight),
-        resizeToAvoidBottomInset: true,
-        body: SafeArea(
-        child: Container(
+      body: SafeArea(
+        child: Center(
           child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(height: 40),
-                  // image
-                  Image.asset('assets/images/HiGIF.gif', height: screenHeight*0.35),
-                  // title
-                  Text(
-                    'Hello!',
-                    style: AppTextStyle.appName(context, fontSize: 25)
-                  ),
-                  const SizedBox(height: 40),
-                  // Paragraph
-                  Text(
-                    'Kami harus memanggil kamu apa?',
-                    style: AppTextStyle.paragraph(context, fontSize: 18,
-                        // color: Colors.black54
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Column(
+              children: [
+                const SizedBox(height: 40),
+
+                Image.asset(
+                  'assets/images/HiGIF.gif',
+                  height: screenHeight * 0.33,
+                ),
+
+                const SizedBox(height: 20),
+
+                Text(
+                  'Hello!',
+                  style: AppTextStyle.appName(context, fontSize: 28),
+                ),
+
+                const SizedBox(height: 10),
+
+                Text(
+                  'Kami harus memanggil kamu apa?',
+                  style: AppTextStyle.paragraph(context, fontSize: 18),
+                  textAlign: TextAlign.center,
+                ),
+
+                const SizedBox(height: 35),
+
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 22),
+                  decoration: BoxDecoration(
+                    color: AppColor.background(
+                      context,
+                      light: Colors.white.withOpacity(0.6),
+                      dark: AppColor.darkBlack,
+                    ),
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      color: AppColor.borderColor(context),
+                      width: 1.2,
                     ),
                   ),
-                  const SizedBox(height: 20),
-                  // inputBox & button
-                  SizedBox(
-                    width: screenWidth * 0.8,
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: TextField(
-                            controller: controller,
-                            keyboardType: TextInputType.name,
-                            decoration: InputDecoration(
-                              hintText: 'nama',
-                              hintStyle: AppTextStyle.paragraph(context, colorDark: AppColor.extraLightBlack),
-                              labelText: 'Masukkan Nama Anda',
-                              labelStyle: AppTextStyle.paragraph(context, colorDark: AppColor.white),
-                              enabledBorder: border,
-                              focusedBorder: border,
-                              disabledBorder: border,
-                            ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          controller: controller,
+                          decoration: InputDecoration(
+                            hintText: 'Nama',
+                            hintStyle: AppTextStyle.paragraph(
+                                context, colorDark: AppColor.extraLightBlack),
+                            labelText: 'Masukkan Nama Anda',
+                            labelStyle: AppTextStyle.paragraph(
+                                context, colorDark: AppColor.white),
+                            enabledBorder: border,
+                            focusedBorder: border,
                           ),
                         ),
-                        const SizedBox(width: 30),
-                        ElevatedButton(
+                      ),
+
+                      const SizedBox(width: 16),
+
+                      Container(
+                        decoration: BoxDecoration(
+                          color: AppColor.buttonColor(context, light: AppColor.cream),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        child: IconButton(
                           onPressed: onSubmit,
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColor.buttonColor(context, light: AppColor.cream),
-                            padding: const EdgeInsets.symmetric(vertical: 15),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(50),
+                          icon: Icon(
+                            Icons.arrow_forward,
+                            size: 28,
+                            color: AppColor.buttonColor(
+                              context,
+                              light: AppColor.border,
+                              dark: AppColor.darkBlack,
                             ),
                           ),
-                          child: Icon(Icons.arrow_forward, size: 30, color: AppColor.buttonColor(context, light: AppColor.border, dark: AppColor.darkBlack)),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                  SizedBox(height: 50)
-                ],
-              ),
+                ),
+
+                const SizedBox(height: 80),
+              ],
             ),
           ),
         ),

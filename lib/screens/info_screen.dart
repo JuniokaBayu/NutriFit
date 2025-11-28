@@ -73,7 +73,7 @@ class InfoScreen extends StatelessWidget {
               Text(
                 'Versi 1.0.0',
                 style: AppTextStyle.paragraph(context, fontSize: 13).copyWith(
-                  color: Theme.of(context).colorScheme.onBackground.withOpacity(0.6),
+                  color: Theme.of(context).colorScheme.onSurface.withOpacity(0.6),
                 ),
               ),
             ],
