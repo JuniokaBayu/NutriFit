@@ -14,14 +14,14 @@ Dibuat Oleh : Junioka Bayu Gionanda
 
 ## 📸 Screenshots
 
-### **Halaman Awal | Kalkulator BMI | Halaman Hasil BMI**
+### **Halaman Awal | Halaman Kalkulator BMI | Halaman Hasil BMI**
 
 | Halaman Awal                                   | Kalkulator BMI                                    | Hasil BMI                                          |
 | ---------------------------------------- | -------------------------------------- | ----------------------------------------------- |
 | ![Splash Light](screenshot/sl_light.jpg) | ![BMI Light](screenshot/bmi_light.jpg) | ![Result Light](screenshot/hasil_bmi_light.jpg) |
 | ![Splash Dark](screenshot/sl_dark.jpg)   | ![BMI Dark](screenshot/bmi_dark.jpg)   | ![Result Dark](screenshot/hasil_bmi_dark.jpg)   |
 
-### **Saran | Mulai | Pengembang**
+### **Halaman Saran | Halaman Mulai | Halaman Pengembang**
 
 | Saran                                      | Mulai                                             | Pengembang                                           |
 | ----------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------- |
@@ -35,7 +35,7 @@ Dibuat Oleh : Junioka Bayu Gionanda
 | ![Riwayat Light](screenshot/riwayat_light.jpg) | ![Info Light](screenshot/info_light.jpg) | ![Ubah Nama Light](screenshot/ubah_namaLight.jpg) |
 | ![Riwayat Dark](screenshot/riwayat_dark.jpg) | ![Info Dark](screenshot/info_dark.jpg) | ![Ubah Nama Dark](screenshot/ubah_namaDark.jpg) | -->
 
-### **Riwayat BMI | Info Aplikasi | Nama | Menu Pop Up**
+### **Halaman Riwayat BMI | Halaman Info Aplikasi | Halaman Nama | Halaman Menu Pop Up**
 
 | Riwayat                                      | Info                                             | Nama                                             | Menu Pop Up                                             | 
 | ----------------------------------------------- |------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
