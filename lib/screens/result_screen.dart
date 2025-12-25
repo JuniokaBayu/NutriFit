@@ -245,8 +245,8 @@ class ResultScreen extends StatelessWidget {
                                   VerticalDivider(
                                     color: Colors.grey,
                                     thickness: 1,
-                                    width: 0, // space taken by the divider
-                                    indent: 12, // top spacing
+                                    width: 0, 
+                                    indent: 12, 
                                     endIndent: 12, // bo
                                   ),
                               ];

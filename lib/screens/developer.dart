@@ -158,7 +158,6 @@ class Developer extends StatelessWidget {
     );
   }
 
-  // Reusable icon widget (kecil rapi)
   Widget _iconButton(IconData icon, VoidCallback onTap, BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10),
