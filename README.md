@@ -45,29 +45,22 @@ Kesehatan dan Edukasi
 
 | Halaman Awal                                   | Kalkulator BMI                                    | Hasil BMI                                          |
 | ---------------------------------------- | -------------------------------------- | ----------------------------------------------- |
-| ![Splash Light](screenshot/sl_light.jpg) | ![BMI Light](screenshot/bmi_light.jpg) | ![Result Light](screenshot/hasil_bmi_light.jpg) |
-| ![Splash Dark](screenshot/sl_dark.jpg)   | ![BMI Dark](screenshot/bmi_dark.jpg)   | ![Result Dark](screenshot/hasil_bmi_dark.jpg)   |
+| ![Splash Light](screenshot/splash_light.jpg) | ![BMI Light](screenshot/bmi_light2.jpg) | ![Result Light](screenshot/hasil_bmi_light2.jpg) | ![Menu Pop Up Light](screenshot/saran_light2.jpg) |
+| ![Splash Dark](screenshot/splash_dark.jpg)   | ![BMI Dark](screenshot/bmi_dark2.jpg)   | ![Result Dark](screenshot/hasil_bmi_dark2.jpg)   | ![Menu Pop Up Light](screenshot/saran_dark2.jpg) |
 
 ### **Halaman Saran | Halaman Mulai | Halaman Pengembang**
 
 | Saran                                      | Mulai                                             | Pengembang                                           |
 | ----------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------- |
-| ![Saran Light](screenshot/saran_light.jpg) | ![Mulai Light](screenshot/layar_lainya_light.jpg) | ![Pengembang Light](screenshot/pengembang_light.jpg) |
-| ![Saran Dark](screenshot/saran_dark.jpg)   | ![Mulai Dark](screenshot/layar_lainya_dark.jpg)   | ![Pengembang Dark](screenshot/pengembang_dark.jpg)   |
-
-<!-- ### **Riwayat | Info | Ubah Nama**
-
-| Riwayat                                      | Info                                             | Ubah Nama                                             |  
-| ----------------------------------------------- |------------------------------------------------- | ------------------------------------------------- |
-| ![Riwayat Light](screenshot/riwayat_light.jpg) | ![Info Light](screenshot/info_light.jpg) | ![Ubah Nama Light](screenshot/ubah_namaLight.jpg) |
-| ![Riwayat Dark](screenshot/riwayat_dark.jpg) | ![Info Dark](screenshot/info_dark.jpg) | ![Ubah Nama Dark](screenshot/ubah_namaDark.jpg) | -->
+| ![Saran Light](screenshot/riwayat_light2.jpg) | ![Mulai Light](screenshot/layar_mulai_light.jpg) | ![Pengembang Light](screenshot/pengembang_light2.jpg) |
+| ![Saran Dark](screenshot/riwayat_light2.jpg)   | ![Mulai Dark](screenshot/user_name.jpg)   | ![Pengembang Dark](screenshot/pengembang_dark2.jpg)   |
 
 ### **Halaman Riwayat BMI | Halaman Info Aplikasi | Halaman Nama | Halaman Menu Pop Up**
 
 | Riwayat                                      | Info                                             | Nama                                             | Menu Pop Up                                             | 
 | ----------------------------------------------- |------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| ![Riwayat Light](screenshot/riwayat_light.jpg) | ![Info Light](screenshot/info_light.jpg) | ![Nama Light](screenshot/ubah_namaLight.jpg) | ![Menu Pop Up Light](screenshot/Menu_Light.jpg) |
-| ![Riwayat Dark](screenshot/riwayat_dark.jpg) | ![Info Dark](screenshot/info_dark.jpg) | ![Nama Dark](screenshot/ubah_namaDark.jpg) | ![Menu Pop Up Dark](screenshot/Menu_Dark.jpg) |
+| ![Info Light](screenshot/info_light2.jpg) | ![Nama Light](screenshot/ubah_namaLight2.jpg) | ![Menu Pop Up Light](screenshot/Menu_Light2.jpg) |
+| ![Info Dark](screenshot/info_dark2.jpg) | ![Nama Dark](screenshot/ubah_namaDark2.jpg) | ![Menu Pop Up Dark](screenshot/Menu_Dark2.jpg) |
 
 
 ---

@@ -137,7 +137,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text("Riwayat NutriFit", style: AppTextStyle.appBar(context)),
+        title: Text("Riwayat BMI Anda", style: AppTextStyle.appBar(context)),
         actions: [
           IconButton(icon: const Icon(Icons.filter_alt_outlined), onPressed: _showDatePickerFilter),
           if (_selectedFilterDate != null)
