@@ -45,8 +45,8 @@ Kesehatan dan Edukasi
 
 | Halaman Awal                                   | Kalkulator BMI                                    | Hasil BMI                                          |
 | ---------------------------------------- | -------------------------------------- | ----------------------------------------------- |
-| ![Splash Light](screenshot/splash_light.jpg) | ![BMI Light](screenshot/bmi_light2.jpg) | ![Result Light](screenshot/hasil_bmi_light2.jpg) | ![Menu Pop Up Light](screenshot/saran_light2.jpg) |
-| ![Splash Dark](screenshot/splash_dark.jpg)   | ![BMI Dark](screenshot/bmi_dark2.jpg)   | ![Result Dark](screenshot/hasil_bmi_dark2.jpg)   | ![Menu Pop Up Light](screenshot/saran_dark2.jpg) |
+| ![Splash Light](screenshot/splash_light.jpg) | ![BMI Light](screenshot/bmi_light2.jpg) | ![Result Light](screenshot/hasil_bmi_light2.jpg) | ![Saran Light](screenshot/saran_light2.jpg) |
+| ![Splash Dark](screenshot/splash_dark.jpg)   | ![BMI Dark](screenshot/bmi_dark2.jpg)   | ![Result Dark](screenshot/hasil_bmi_dark2.jpg)   | ![Saran Dark](screenshot/saran_dark2.jpg) |    
 
 ### **Halaman Saran | Halaman Mulai | Halaman Pengembang**
 
