@@ -1,6 +1,8 @@
 ## Icon Aplikasi
 
-![Demo App](assets/images/app_Icon.png)
+| Icon                                   |
+| ---------------------------------------- |
+| ![Demo App](assets/images/app_Icon.png) |
 
 ---
 
@@ -41,23 +43,23 @@ Kesehatan dan Edukasi
 
 ## 📸 Screenshots
 
-### **Halaman Awal | Halaman Kalkulator BMI | Halaman Hasil BMI**
+### **Halaman Awal | Halaman Kalkulator BMI | Halaman Hasil BMI | Halaman Saran**
 
 | Halaman Awal                                   | Kalkulator BMI                                    | Hasil BMI                                          | Saran                                            |                         
 | ---------------------------------------- | -------------------------------------- | ----------------------------------------------- | -------------------------------------- |
 | ![Splash Light](screenshot/splash_light.jpg) | ![BMI Light](screenshot/bmi_light2.jpg) | ![Result Light](screenshot/hasil_bmi_light2.jpg) | ![Saran Light](screenshot/saran_light2.jpg) |
 | ![Splash Dark](screenshot/splash_dark.jpg)   | ![BMI Dark](screenshot/bmi_dark2.jpg)   | ![Result Dark](screenshot/hasil_bmi_dark2.jpg)   | ![Saran Dark](screenshot/saran_dark2.jpg) |    
 
-### **Halaman Saran | Halaman Mulai | Halaman Pengembang**
+### **Halaman Riwayat | Halaman Mulai dan Mengisi Nama | Halaman Pengembang**
 
-| Saran                                      | Mulai                                             | Pengembang                                           |
+| Riwayat                                      | Mulai dan Nama                                             | Pengembang                                           |
 | ----------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------- |
 | ![Saran Light](screenshot/riwayat_light2.jpg) | ![Mulai Light](screenshot/layar_mulai_light.jpg) | ![Pengembang Light](screenshot/pengembang_light2.jpg) |
-| ![Saran Dark](screenshot/riwayat_light2.jpg)   | ![Mulai Dark](screenshot/user_name.jpg)   | ![Pengembang Dark](screenshot/pengembang_dark2.jpg)   |
+| ![Saran Dark](screenshot/riwayat_dark2.jpg)   | ![Mulai Dark](screenshot/user_name.jpg)   | ![Pengembang Dark](screenshot/pengembang_dark2.jpg)   |
 
-### **Halaman Riwayat BMI | Halaman Info Aplikasi | Halaman Nama | Halaman Menu Pop Up**
+### **Halaman Info Nutrifit | Halaman Ubah Nama | Halaman Menu Pop Up**
 
-| Riwayat                                      | Info                                             | Nama                                             | Menu Pop Up                                             | 
+| Info Nutrifit                                      | Ubah Nama                                             | Menu Pop Up                                             |
 | ----------------------------------------------- |------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
 | ![Info Light](screenshot/info_light2.jpg) | ![Nama Light](screenshot/ubah_namaLight2.jpg) | ![Menu Pop Up Light](screenshot/Menu_Light2.jpg) |
 | ![Info Dark](screenshot/info_dark2.jpg) | ![Nama Dark](screenshot/ubah_namaDark2.jpg) | ![Menu Pop Up Dark](screenshot/Menu_Dark2.jpg) |
