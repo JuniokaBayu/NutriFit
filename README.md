@@ -60,7 +60,7 @@ Kesehatan dan Edukasi
 ### **Halaman Info Nutrifit | Halaman Ubah Nama | Halaman Menu Pop Up**
 
 | Info Nutrifit                                      | Ubah Nama                                             | Menu Pop Up                                             |
-| ----------------------------------------------- |------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| ----------------------------------------------- |------------------------------------------------- | ------------------------------------------------- |
 | ![Info Light](screenshot/info_light2.jpg) | ![Nama Light](screenshot/ubah_namaLight2.jpg) | ![Menu Pop Up Light](screenshot/Menu_Light2.jpg) |
 | ![Info Dark](screenshot/info_dark2.jpg) | ![Nama Dark](screenshot/ubah_namaDark2.jpg) | ![Menu Pop Up Dark](screenshot/Menu_Dark2.jpg) |
 
